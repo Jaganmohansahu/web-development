@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background: url(img.jpg), url(bg.jpg);
+    background-size: cover;
+    transition: 1s;
+}
+
+.box:hover {
+    background-blend-mode: color-burn;
+    filter: grayscale(1);
+}

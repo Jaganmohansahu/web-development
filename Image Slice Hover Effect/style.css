@@ -1,0 +1,70 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.box {
+	position: relative;
+	width: 600px;
+	height: 400px;
+}
+
+.box .face {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.box .face span {
+	width: 150px;
+	height: 100%;
+	transition: 1s;
+}
+
+.box .face.face1 span {
+	background: url(https://picsum.photos/600/400);
+	/* Image width and height is 600px * 400px */
+	transform-origin: top;
+}
+
+.box:hover .face.face1 span {
+	transform: rotateX(90deg) translateY(-50%);
+}
+
+.box .face.face2 span {
+	background: url(http://lorempixel.com/600/400);
+	/* Image width and height is 600px * 400px */
+	transform-origin: bottom;
+	transform: rotateX(90deg) translateY(50%);
+}
+
+.box:hover .face.face2 span {
+	transform: rotateX(0deg) translateY(0);
+}
+
+.box .face span:nth-child(1) {
+	background-position-x: 0;
+	transition-delay: 0s;
+}
+
+.box .face span:nth-child(2) {
+	background-position-x: -150px;
+	transition-delay: 0.2s;
+}
+
+.box .face span:nth-child(3) {
+	background-position-x: -300px;
+	transition-delay: 0.4s;
+}
+
+.box .face span:nth-child(4) {
+	background-position-x: -450px;
+	transition-delay: 0.6s;
+}

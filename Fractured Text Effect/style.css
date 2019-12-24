@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fcff8a;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+}
+
+li {
+    list-style: none;
+    float: left;
+    color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10em;
+    font-weight: bolder;
+    position: relative;
+}
+
+ul li:before,
+ul li:after {
+    content: attr(data-title);
+    color: #262626;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+ul li:nth-child(odd):before {
+    clip-path: polygon(55% 0, 0 0 , 0 100%, 35% 100%);
+    top: -7px;
+    left: -2px;
+}
+
+ul li:nth-child(odd):after {
+    clip-path: polygon(55% 0, 100% 0 , 100% 100%, 35% 100%);
+    top:2px;
+    left: 2px;
+}
+
+ul li:nth-child(even):before {
+    clip-path: polygon(25% 0, 0 0, 0 100%, 75% 100%);
+    top: 10px;
+    left: -2px;
+}
+
+ul li:nth-child(even):after {
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 75% 100%);
+    top: 2px;
+    left: 2px;
+}
+
+ul li:nth-child(even) {
+    animation: animateEven 3s linear infinite;
+}
+
+ul li:nth-child(odd) {
+    animation: animateOdd 3s linear infinite;
+}
+
+@keyframes animateEven {
+    0% {
+        transform: rotate(15deg);
+    }
+    25% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-15deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(15deg);
+    }
+}
+
+@keyframes animateOdd {
+    0% {
+        transform: rotate(-15deg);
+    }
+    25% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}

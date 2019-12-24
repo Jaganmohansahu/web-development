@@ -1,0 +1,3 @@
+$(function(){
+    $('.gooey span').draggable();
+})
