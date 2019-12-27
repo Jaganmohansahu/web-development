@@ -1,0 +1,94 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #ffeb3b;
+}
+
+.loader {
+	position: absolute;
+	top: 50%;
+	left: calc(50% + 26px);
+	transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.loader span {
+	position: relative;
+	display: block;
+	width: 2px;
+	height: 66px;
+	background: transparent;
+	margin-top: -52px;
+	animation: animate 2s linear infinite;
+}
+
+.loader span::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 10px;
+	height: 10px;
+	background-color: #f00;
+	border-radius: 50%;
+	box-shadow: 0 0 0 2px rgba(0, 0, 0, 1);
+}
+
+.loader span::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 10px;
+	height: 10px;
+	background: #f00;
+	border-radius: 50%;
+	box-shadow: 0 0 0 2px rgba(0, 0, 0, 1);
+}
+
+.loader span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.loader span:nth-child(1)::before,
+.loader span:nth-child(1)::after {
+	background: #ff24a8;
+}
+
+.loader span:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.loader span:nth-child(2)::before,
+.loader span:nth-child(2)::after {
+	background: #ff0000;
+}
+
+.loader span:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.loader span:nth-child(3)::before,
+.loader span:nth-child(3)::after {
+	background: #00ff00;
+}
+
+.loader span:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.loader span:nth-child(4)::before,
+.loader span:nth-child(4)::after {
+	background: #2196f3;
+}
+
+@keyframes animate {
+	0%,
+	75% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(180deg);
+	}
+}
