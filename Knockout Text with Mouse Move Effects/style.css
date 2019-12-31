@@ -1,0 +1,32 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+section {
+	height: 100vh;
+	background: url(img.jpg);
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section h1 {
+    position: relative;
+    padding-bottom: 40px;
+	max-width: 1200px;
+	font-size: 16em;
+	text-transform: uppercase;
+	text-align: center;
+    line-height: 0.6em;
+    color: #000000;
+    background: #ffffff;
+    mix-blend-mode: screen;
+    cursor: default;
+}
+
+section h1 span {
+	font-size: 0.5em;
+}
