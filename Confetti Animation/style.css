@@ -1,0 +1,16 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.cursor {
+	position: absolute;
+	pointer-events: none;
+	transition: 0.1s;
+}
+
+.confetto {
+	height: 10px !important;
+	width: 10px !important;
+}
