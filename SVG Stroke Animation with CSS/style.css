@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(img.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 350px;
+}
+
+svg text {
+    font-size: 200px;
+    font-weight: bold;
+    fill: rgba(0, 0, 0, 0.1);
+    stroke-width: 1px;
+    stroke: #ffffff;
+    stroke-linejoin: round;
+    stroke-dasharray: 80;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+    100% {
+        stroke-dashoffset: 160;
+    }
+}
