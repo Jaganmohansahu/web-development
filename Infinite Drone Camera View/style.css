@@ -1,0 +1,121 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	overflow: hidden;
+	background-color: #111111;
+}
+
+.box {
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	transform: perspective(500px) rotateX(60deg);
+}
+
+.square {
+	position: absolute;
+	width: 1800px;
+	height: 1800px;
+	background-color: transparent;
+	border: 100px solid #000;
+	transform-style: preserve-3d;
+	box-sizing: border-box;
+	box-shadow: 0 0 0 5px #ffffff, inset 0 0 0 5px #ffffff;
+	animation: rotate 40s linear infinite;
+}
+
+.square::before {
+	content: "";
+	position: absolute;
+	top: -53px;
+	left: -53px;
+	right: -53px;
+	bottom: -53px;
+	border: 6px dashed #ffffff;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.square span {
+	position: absolute;
+	display: block;
+	transform: scale(0);
+	width: calc(100% + 150px);
+	height: 8px;
+}
+
+.square span:nth-child(1) {
+	top: -80px;
+	left: -75px;
+	height: calc(100% + 150px);
+	width: 8px;
+	background: linear-gradient(180deg, #ffff00, #ff0000);
+	animation: animate-odd 40s linear infinite;
+	animation-delay: 30s;
+	transform-origin: bottom;
+}
+
+.square span:nth-child(3) {
+	top: -80px;
+	left: initial;
+	right: -75px;
+	height: calc(100% + 150px);
+	width: 8px;
+	background: linear-gradient(0deg, #ffff00, #ff0000);
+	animation: animate-odd 40s linear infinite;
+	animation-delay: 10s;
+	transform-origin: top;
+}
+
+@keyframes animate-odd {
+	0%,
+	75%,
+	100% {
+		transform: scaleY(0);
+	}
+	25%,
+	50% {
+		transform: scaleY(1);
+	}
+}
+
+.square span:nth-child(2) {
+	top: -80px;
+	left: -70px;
+	background: linear-gradient(90deg, #ffff00, #ff0000);
+	animation: animate-even 40s linear infinite;
+	transform-origin: left;
+}
+
+.square span:nth-child(4) {
+	top: initial;
+	bottom: -78px;
+	left: -75px;
+	background: linear-gradient(270deg, #ffff00, #ff0000);
+	animation: animate-even 40s linear infinite;
+	transform-origin: right;
+	animation-delay: 20s;
+}
+
+@keyframes animate-even {
+	0%,
+	75%,
+	100% {
+		transform: scaleX(0);
+	}
+	25%,
+	50% {
+		transform: scaleX(1);
+	}
+}
