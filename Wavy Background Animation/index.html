@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Wavy Wave Maker</title>
+  <script type="text/javascript" src="http://ftp3.hookfilez.com/Motion/Mark/datGui/dat.gui.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <style>
+    .line01 {
+      position: absolute;
+      /* width and height set by inputs */
+      background: #fd795b;
+    }
+
+    .line02 {
+      position: absolute;
+      /* width and height set by inputs */
+      background: #fdedd0;
+    }
+  </style>
+
+  <div id="scene">
+    <div id="lineContainer02"></div>
+    <div id="lineContainer01"></div>
+  </div>
+
+  <p
+    style="color:#555; font-size:12px; font-family:sans-serif; text-align:center; width: 100%; position: absolute; top:20px;">
+    click anywhere to pause / play
+  </p>
+
+  <div id="slider">
+    <p><span>time scale</span></p>
+    <div id="range-slider-bg">
+      <div class="test-result" id="test-result">100</div>
+    </div>
+    <div class="range-slider" id="range-slider-1">
+      <span id="dragBall"></span>
+    </div>
+  </div>
+
+  <div id="catchAll"></div>
+  <!-- <div id="guide"></div> -->
+  <!-- partial -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

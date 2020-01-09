@@ -1,0 +1,118 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+	/* background: #BCF1ED; */
+	font-family: sans-serif;
+	font-weight: bold;
+	position: absolute;
+	line-height: 1.2;
+	color: #555;
+	overflow: hidden;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* guide line down the center vertically */
+#guide {
+	position: absolute;
+	width: 1px;
+	height: 100%;
+	left: 50%;
+	top: 0px;
+	background: red;
+}
+
+#catchAll {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	background: rgba(255, 0, 0, 0);
+}
+
+#scene {
+	position: relative;
+	margin: 0 auto;
+	perspective: 600px; /* the lower this is, the fancier it gets */
+	top: 50%;
+	height: 160px;
+	/* background-color: red; */
+}
+
+#lineContainer01 {
+	position: absolute;
+	top: -50%;
+}
+
+#lineContainer02 {
+	position: absolute;
+	top: -50%;
+}
+
+#slider {
+	width: 100%;
+	height: 60px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+#slider p {
+	text-align: left;
+	position: absolute;
+	bottom: 1px;
+	left: 50%;
+}
+
+#slider p span {
+	margin-left: -50%;
+}
+
+#range-slider-bg {
+	width: 880px;
+	height: 20px;
+	margin: auto;
+	position: relative;
+	display: block;
+	background-color: #505050; /* gray */
+	border-radius: 10px;
+}
+
+#range-slider-1 {
+	/* width:860px; set in js*/
+	height: 20px;
+	margin: -20px auto;
+	position: relative;
+	cursor: pointer;
+	display: block;
+	z-index: 1;
+	/* background-color: #505050; */ /* gray */
+}
+
+.range-slider span {
+	display: block;
+	height: inherit;
+	position: absolute;
+	/*   z-index:2; */
+	background-color: white;
+	cursor: inherit;
+	border-radius: 50%;
+	/* left: 86px; set in js */
+}
+
+/* Test result */
+.test-result {
+	font-family: sans-serif;
+	font-weight: bold;
+	position: absolute;
+	right: -60px;
+	line-height: 1.2;
+	color: #555;
+}
