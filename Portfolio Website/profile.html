@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Resume</title>
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/profile.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
@@ -25,14 +25,128 @@
             </div>
             <div class="social-icons-container">
                 <span class="social-text">
-                    <button class="plus-button">
+                    <button class="share-button">
                         <i class="fa fa-share"></i>
                     </button>
                 </span>
+                <ul class="social-icons">
+                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa fa-whatsapp"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                </ul>
             </div>
         </header>
-    </section>
 
+        <section id="content">
+            <div id="profile">
+                <div class="about">
+                    <div class="photo-inner">
+                        <ul>
+                            <li><img src="images/photo.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <h1>TIM WILSON</h1>
+                    <h3>GRAPHIC & WEB DESIGNER</h3>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nam quidem! Distinctio in
+                        ipsa
+                        repellat unde nesciunt, aut molestiae ea!
+                    </p>
+                </div>
+                <ul class="personal-info">
+                    <li><label for="">Name</label><span>Tim Wilson</span></li>
+                    <li><label for="">Birth Date</label><span>17th July 1997</span></li>
+                    <li><label for="">Address</label><span>Bhubaneswar, Odisha</span></li>
+                    <li><label for="">Birth Date</label><span>17th July 1997</span></li>
+                    <li><label for="">Email</label><span class="word-wrap">sahujaganmohan@gmail.com</span></li>
+                    <li><label for="">Phone</label><span>9999999999</span></li>
+                    <li><label for="">Website</label><span class="word-wrap">www.google.com</span></li>
+                </ul>
+            </div>
+
+            <nav class="menu">
+                <ul class="tabs">
+                    <li class="tmenu">
+                        <a href="#profile" class="tab-profile active">
+                            <i><i class="fa fa-user"></i></i>
+                            PROFILE
+                        </a>
+                    </li>
+                    <li class="tmenu">
+                        <a href="#resume">
+                            <i><i class="fa fa-wpexplorer"></i></i>
+                            RESUME
+                        </a>
+                    </li>
+                    <li class="tmenu">
+                        <a href="#portfolio">
+                            <i><i class="fa fa-eercast"></i></i>
+                            PORTFOLIO
+                        </a>
+                    </li>
+                    <li class="tmenu">
+                        <a href="#contact">
+                            <i><i class="fa fa-telegram"></i></i>
+                            CONTACT
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <section id="resume">
+                <div class="timeline-section">
+                    <div class="main-wrapper-resume">
+                        <div class="cartitle-wrapper">
+                            <div class="color-box">
+                                <button id="red-color" class="btn-style"></button>
+                                <button id="yellow-color" class="btn-style"></button>
+                                <button id="blue-color" class="btn-style"></button>
+                                <button id="green-color" class="btn-style"></button>
+                                <button id="setting-icon">
+                                    <i class="fa fa-cog fa-spin"></i>
+                                </button>
+                            </div>
+                            <div class="container no-padding">
+                                <div class="row no-margin">
+                                    <div class="col-md-6 no-padding bg-color-left">
+                                        <div class="left-name bg-color-1">
+                                            <h2>TIM<span class="text-color"></span></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="portfolio">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam provident commodi, qui saepe, suscipit
+                    voluptas et eveniet quod repudiandae nulla, velit dolor fugit sint harum esse laudantium. Voluptate
+                    consectetur sequi magni expedita. Doloremque aspernatur iusto incidunt sapiente omnis velit nisi
+                    consequatur assumenda quam aliquid? Vitae, minus. Esse ea quas a!
+                </p>
+            </section>
+            <section id="contact">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam provident commodi, qui saepe, suscipit
+                    voluptas et eveniet quod repudiandae nulla, velit dolor fugit sint harum esse laudantium. Voluptate
+                    consectetur sequi magni expedita. Doloremque aspernatur iusto incidunt sapiente omnis velit nisi
+                    consequatur assumenda quam aliquid? Vitae, minus. Esse ea quas a!
+                </p>
+            </section>
+        </section>
+
+        <footer>
+            <div class="copy-right">Copyright &copy; 2020 Jagan Mohan Sahu</div>
+        </footer>
+
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easytabs/3.2.0/jquery.easytabs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.caroufredsel/6.2.1/jquery.carouFredSel.packed.js"></script>
     <script src="js/profile.js"></script>
 </body>
 
