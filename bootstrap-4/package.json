@@ -1,0 +1,27 @@
+{
+	"name": "bootstrap-4",
+	"version": "1.0.0",
+	"description": "Bootstrap-4 Fundamentals",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"HTML",
+		"CSS",
+		"Bootstrap"
+	],
+	"author": "Jagan",
+	"license": "ISC",
+	"devDependencies": {
+		"browser-sync": "^2.26.7",
+		"gulp": "^3.9.1",
+		"gulp-cli": "^2.2.0",
+		"gulp-sass": "^4.0.2"
+	},
+	"dependencies": {
+		"bootstrap": "^4.4.1",
+		"jquery": "^3.4.1",
+		"popper.js": "^1.16.0"
+	}
+}
