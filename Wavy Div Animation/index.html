@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wavy Div Aniamtion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="content">
+                <h2>Animated DIV</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis veritatis perferendis reprehenderit
+                    facilis velit magni fugiat suscipit laborum? Libero dolorem quo cum? Modi, alias dolor qui tenetur
+                    iste quis hic fugiat! Aspernatur vero perferendis accusamus eligendi doloremque voluptatem cumque
+                    fugit, consequuntur aperiam quo consequatur quasi iure labore tempora voluptatibus distinctio!</p>
+            </div>
+        </div>
+    </div>
+    <svg>
+        <filter id="wavy">
+            <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="2">
+                <animate attributeName="baseFrequency" dur="60s" values="0.02; 0.05; 0.02;" repeatCount="indefinite" />
+            </feTurbulence>
+            <feDisplacementMap in="SourceGraphic" scale="30" />
+        </filter>
+    </svg>
+</body>
+
+</html>
