@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #00fff3;
+}
+
+#text {
+	position: relative;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 10em;
+	outline: none;
+	width: 100%;
+	text-align: center;
+	text-shadow: 1px 1px 0 #01ded3;
+	font-style: italic;
+}
